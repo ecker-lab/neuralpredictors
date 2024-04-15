@@ -33,6 +33,11 @@ class Exp(nn.Module):
         return torch.exp(x)
 
 
+class ReLU(nn.Module):
+    def forward(self, x):
+        return F.relu(x)
+
+
 class Log1Exp(nn.Module):
     def forward(self, x):
         return log1exp(x)
